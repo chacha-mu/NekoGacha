@@ -157,7 +157,7 @@ function shuffle(speed, count) {
 
   button.textContent =
     "ダン！！";
-
+new Audio("cat.mp3").play();
   document
     .getElementById("catSound")
     .play();
