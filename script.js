@@ -1,3 +1,4 @@
+const sound = new Audio("cat.mp3");
 const rouletteCats = [
 
   {
@@ -153,14 +154,14 @@ function shuffle(speed, count) {
 
     }, speed);
 
- } else {
+} else {
 
   button.textContent =
     "ダン！！";
-new Audio("catvoice.mp3").play();
-  document
-    .getElementById("catSound")
-    .play();
+
+  sound.currentTime = 0;
+
+  sound.play();
 
   spinning = false;
 
